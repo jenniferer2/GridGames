@@ -1,6 +1,7 @@
 .container {
   display: grid;
-  /* Style rows and columns */
+  grid-template-columns: repeat(5, 100px  [col-start]);  
+  grid-template-rows: repeat(2, 30px [row-start]);
 }
 
 #title {
