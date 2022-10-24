@@ -1,26 +1,48 @@
 .container {
   display: grid;
+  grid-template-columns: repeat(5, 100px  [col-start]);  
+  grid-template-rows: repeat(2, 30px [row-start]);
+  grid-template-rows: 95px 95px 95px 95px 95px;
+  grid-template-rows: 30px 30px 30px 30px 30px;
 
 }
 
 #navbar {
-
+  grid-row-start: 1;
+  grid-row-end: one;
+  grid-column-start: 1; 
+  grid-column-end: five; 
 }
 
 #sidebar {
   writing-mode: vertical-rl;
+  grid-row-start: 2;
+  grid-row-end: four;
+  grid-column-start: 1;
+  grid-column-end: one;
+
 
 }
 
 #title {
-
+  grid-row-start: 2;
+  grid-row-end: two;
+  grid-column-start: 2;
+  grid-column-end: five;
 }
 
 
 #content {
-
+grid-row-start: 3;
+grid-row-end: four; 
+grid-column-start: 2;
+grid-column-end: five;
 }
 
 #footer {
+  grid-row-start: 4;
+  grid-row-end: four;
+  grid-column-start: 1; 
+  grid-column-end: five; 
 
 }
